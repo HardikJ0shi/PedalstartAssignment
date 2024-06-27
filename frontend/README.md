@@ -1,13 +1,13 @@
 ## Prerequisites
-Make sure you have Node.js and npm installed. You can download them from [nodejs.org](https://nodejs.org).
+
+Before you begin, make sure you have Node.js and npm installed. You can download them from [nodejs.org](https://nodejs.org).
 
 ## Installation
-Clone the repository:
 
+Clone the repository and navigate to the project directory:
+
+```bash
 git clone https://github.com/your-username/your-repo-name.git
-
-## Navigate to the project directory:
-
 cd your-repo-name
 
 ## Install the dependencies:
