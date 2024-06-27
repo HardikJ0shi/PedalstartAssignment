@@ -3,6 +3,7 @@ import ToDo from "./components/ToDo";
 import axios from "axios";
 import { baseURL } from "./utils/constant";
 import Popup from "./components/Popup";
+import "./index.css"; // Assuming you have a separate CSS file for styling
 
 const App = () => {
   const [toDos, setToDos] = useState([]);
@@ -40,23 +41,25 @@ const App = () => {
             onChange={(e) => setInput({ ...input, toDo: e.target.value })}
             type="text"
             placeholder="Add a ToDo..."
+            className="input_field"
           />
           <input
             value={input.description}
             onChange={(e) => setInput({ ...input, description: e.target.value })}
             type="text"
             placeholder="Add a Description..."
+            className="input_field"
           />
           <input
             value={input.time}
             onChange={(e) => setInput({ ...input, time: e.target.value })}
             type="datetime-local"
-            placeholder="Add a Time..."
+            className="input_field"
           />
-          <button onClick={saveToDo}>Add</button>
+          <button onClick={saveToDo} className="add_button">Add</button>
         </div>
 
-        <div className="list">
+        <div className="todo_list">
           {toDos.map((el) => (
             <ToDo
               key={el._id}
